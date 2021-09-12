@@ -1,2 +1,68 @@
 body {
+    min-width: 100%;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+header {
+    min-width: 100%;
+    padding: .1em 0;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+.city {
+    margin-top: 0;
+}
+input {
+    min-width: 100%;
+    min-height: 2em;
+    border-radius: 5px;
+    border-color: lightgrey;
+    justify-self: center;
+}
+input[type=submit] {
+    background-color: lightskyblue;
+    font-size: .5em;
+    color: azure;
+    padding: .75em;
+}
+.wrapper {
+    min-width: 100%;
+    display: flex;
+}
+.search {
+    border-bottom: solid 1px black;
+    min-width: 100%;
+}
+.sidebar {
+    padding: 1em;
+    flex-grow: 1;
+}
+button {
+    min-width: 100%;
+    min-height: 2em;
+    padding: .75em;
+    margin: .1em;
+    font-size: 1em;
+    border-radius: 5px;
+    border-color: lightgrey;
+    justify-self: center;
+}
+.main {
+    padding: 1em;
+    flex-grow: 4;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    border: solid 1px black;
+    padding: 1em;
+}
+.one-day {
+    border: solid 1px black;
+    padding: 1em;
+}
+/* .five-day {
+} */

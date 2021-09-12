@@ -1,41 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>Weather Dashboard</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header><h1>Weather Dashboard</h1></header>
     <div class="wrapper">
-        <div class="search-container">
-            <h1>
-                <form>
-                    <label for="city">City:</label><br>
-                    <input type="text" id="city" name="city"><br>
-                </form>
-            </h1>
+      <div class="sidebar">
+          <div class="search">
+        <h1>
+          <form>
+            <label for="city">Search for a City:</label><br />
+            <input type="text" id="city" name="city" placeholder="Search for a City" /><br />
+            <input type="submit" value="Search">
+          </form>
+        </h1>
+    </div><br />
+        <div class="saved">
+            <button>city</button>
+            <button>city</button>
+            <button>city</button>
+            <button>city</button>
+            <button>city</button>
         </div>
-        <div class="city-one-day">
-            <div>
-                <h1>
-                City Name (day/month/year)
-                </h1>
-            </div>
-            <div>temp: degrees</div>
-            <div>wind: speed</div>
-            <div>humidity: hum Index</div>
-            <div>UV: uv index</div>
-
-
-        </div>
-        <!-- <div class="three">Three</div> -->
-        <!-- <div class="four">Four</div> -->
-        <!-- <div class="five">Five</div> -->
-        <!-- <div class="six">Six</div> -->
       </div>
-      <script src="./assets/javascript/script.js"></script>
-</body>
+      <div class="main">
+        <div class="one-day">
+          <div>
+            <h1 class="city">City Name (day/month/year) icon0</h1>
+          </div>
+          <div>Temp: degrees</div>
+          <div>Wind: speed</div>
+          <div>Humidity: hum Index</div>
+          <div>UV Index: uv index</div>
+        </div>
+        <div class="five-day">
+          <h2>5 Day Forecast:</h2>
+          <div>
+          <div class="cards">
+              <div class="card">
+            Card 1
+            <div>date</div>
+            <div>icon1</div>
+            <div>temp</div>
+            <div>wind</div>
+            <div>humidity</div>
+        </div>
+          <div class="card">
+            Card 2
+            <div>date</div>
+            <div>icon2</div>
+            <div>temp</div>
+            <div>wind</div>
+            <div>humidity</div>
+          </div>
+          <div class="card">
+            Card 3
+            <div>date</div>
+            <div>icon3</div>
+            <div>temp</div>
+            <div>wind</div>
+            <div>humidity</div>
+          </div>
+          <div class="card">
+            Card 4
+            <div>date</div>
+            <div>icon4</div>
+            <div>temp</div>
+            <div>wind</div>
+            <div>humidity</div>
+          </div>
+          <div class="card">
+            Card 5
+            <div>date</div>
+            <div>icon5</div>
+            <div>temp</div>
+            <div>wind</div>
+            <div>humidity</div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="./assets/javascript/script.js"></script>
+  </body>
 </html>
