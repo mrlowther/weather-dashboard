@@ -56,9 +56,9 @@ button {
     padding: 1em;
     flex-grow: 8;
 }
-/* .hide {
+.hide {
     visibility: hidden;
-} */
+}
 .cards {
     display: flex;
     justify-content: space-between;
@@ -66,6 +66,8 @@ button {
 .card {
     border: solid 1px black;
     padding: 1em;
+    color: white;
+    background-color: midnightblue;
 }
 .one-day {
     border: solid 1px black;
@@ -85,6 +87,9 @@ button {
     border-radius: 5px;
     min-width: 2em;
     text-align: center;
+}
+h3 {
+    margin: 0;
 }
 /* .five-day {
 } */
