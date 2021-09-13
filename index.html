@@ -15,8 +15,9 @@
         <h1>
           <form>
             <label for="city">Search for a City:</label><br />
-            <input type="text" id="city" name="city" placeholder="Search for a City" /><br />
-            <input type="submit" value="Search">
+            <input type="text" id="searched-city" name="city" placeholder="Search for a City" /><br />
+            <!-- change to a button -->
+            <button id="searchBtn">Search</button>
           </form>
         </h1>
     </div><br />
@@ -28,15 +29,19 @@
             <button>city</button>
         </div>
       </div>
-      <div class="main">
+      <div class="main hide">
         <div class="one-day">
-          <div>
-            <h1 class="city">City Name (day/month/year) icon0</h1>
+          <div class="oneday-title">
+            <h1 id="city"></h1>
+            <img id="icon"></img>
           </div>
-          <div>Temp: degrees</div>
-          <div>Wind: speed</div>
-          <div>Humidity: hum Index</div>
-          <div>UV Index: uv index</div>
+          <div id="oneday-temp"></div>
+          <div id="oneday-wind"></div>
+          <div id="oneday-humidity"></div>
+        <div class="uv">
+          <div id="uv-title"></div>
+          <div id="oneday-uvIdx"></div>
+        </div>
         </div>
         <div class="five-day">
           <h2>5 Day Forecast:</h2>
@@ -86,6 +91,7 @@
         
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/javascript/script.js"></script>
   </body>
 </html>

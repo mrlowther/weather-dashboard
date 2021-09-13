@@ -10,7 +10,7 @@ header {
     background-color: blue;
     color: white;
 }
-.city {
+#city {
     margin-top: 0;
 }
 input {
@@ -20,12 +20,13 @@ input {
     border-color: lightgrey;
     justify-self: center;
 }
-input[type=submit] {
+
+/* input[type=submit] {
     background-color: lightskyblue;
     font-size: .5em;
     color: azure;
     padding: .75em;
-}
+} */
 .wrapper {
     min-width: 100%;
     display: flex;
@@ -43,15 +44,21 @@ button {
     min-height: 2em;
     padding: .75em;
     margin: .1em;
-    font-size: 1em;
     border-radius: 5px;
     border-color: lightgrey;
     justify-self: center;
 }
+#searchBtn {
+    background-color: lightskyblue;
+    color: azure;
+}
 .main {
     padding: 1em;
-    flex-grow: 4;
+    flex-grow: 8;
 }
+/* .hide {
+    visibility: hidden;
+} */
 .cards {
     display: flex;
     justify-content: space-between;
@@ -63,6 +70,21 @@ button {
 .one-day {
     border: solid 1px black;
     padding: 1em;
+}
+.oneday-title {
+    display: flex;
+}
+#icon {
+    padding-left: 1em;
+}
+.uv {
+    display: flex;
+}
+#oneday-uvIdx {
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    min-width: 2em;
+    text-align: center;
 }
 /* .five-day {
 } */
